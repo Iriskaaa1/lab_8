@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2 лр8</title>
+</head>
+<body>
+    <script>
+        let mas = [ "img1.png","img2.png","img3.png","img4.png"]
+        let a = prompt ("Введите номер картинки",1)
+        
+        if(!isNaN(a) && a>0 && a<=mas.length){
+            document.write("<img width='400' src='images/" + mas[a - 1] + "'>");
+        
+        }else{
+            alert("Неправильный номер!")
+        }
+    </script>
+</body>
+</html>

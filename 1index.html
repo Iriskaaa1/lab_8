@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>задание 1 лр8</title>
+</head>
+<body>
+
+    <script>
+        let input = prompt("Введите число ", 1);
+        let a = Number(input);
+
+        if (Number.isNaN(a)) {
+            alert("Введено не число!");
+        } else {
+            if (a === 0) {
+                alert("Введён 0");
+            } else if (a > 0) {
+                document.write("Квадрат " + a + " = " + (a * a));
+            } else {
+                document.write("Вы ввели отрицательное число: " + a);
+            }
+        }
+    </script>
+
+</body>
+</html>

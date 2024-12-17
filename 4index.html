@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>задание 4 лр8</title>
+</head>
+<body>
+    <script>
+        let p = Math.round(Math.random()*100)
+        let count = 10
+        while(count >0){
+          let v = prompt("Введите предполагаемое число")
+          document.write("Введено "+v+"<br>")
+          if(v>p)
+            alert("Число больше загаданного ")
+          else if(v<p)
+            alert("Число меньше загаданного")
+          else{
+            alert("Угадал!")
+            break
+          }
+          count--
+
+        }
+        if(count==0)
+          alert("Не угадал! Было" +p)
+
+    </script>
+</body>
+</html>
